@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(92, 94, 78, 0.589), rgba(130, 147, 0, 0.3)),url(forest.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.navbar{
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 1000;
+}
+.navbar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 15px;
+}
+.navbar a:hover{
+    color: #000000;
+}
+.logo{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 85%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Animation keyframes */
+@keyframes float {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -55%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li:not(:last-child)::after {
+    content: '|';
+    margin: 0 2px;
+    color: #ffffff;
+}
+
+.login-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+}
+
+.login-input {
+    padding: 10px;
+    border: 1px solid #d5e68e;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #d5e68e;
+}
+
+.login-input::placeholder {
+    color: #999;
+}
+
+.login-button {
+    padding: 10px;
+    background-color: #93b14c;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    width: 40%;
+    margin: 0 auto;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #7CCD7C;
+}
