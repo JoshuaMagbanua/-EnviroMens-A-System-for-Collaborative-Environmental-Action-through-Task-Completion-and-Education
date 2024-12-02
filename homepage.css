@@ -1,0 +1,154 @@
+/* Reset default margins and ensure full height */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../photos/homepage.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* Navigation Styles */
+.top-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #505823;
+    padding: 15px 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Content Styles */
+.content-wrapper {
+    padding: 80px 60px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-family: 'Arial Black', sans-serif;
+    text-transform: none;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.join-now {
+    display: inline-block;
+    background-color: #505823;
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Logo Styles */
+.logo-text {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.logo {
+    width: 500px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 60px;
+    }
+
+    .logo {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content-wrapper {
+        padding: 40px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .logo-text {
+        bottom: 30px;
+        right: 30px;
+    }
+    
+    .logo {
+        width: 200px;
+    }
+}
