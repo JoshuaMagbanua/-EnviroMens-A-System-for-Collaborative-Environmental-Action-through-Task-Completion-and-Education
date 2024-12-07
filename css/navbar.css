@@ -1,0 +1,228 @@
+.navbar {
+    background-color: #85873C;
+    padding: 8px 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.nav-back {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    white-space: nowrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #D8DB7D;
+    color: #85873C;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+}
+
+.search-box form {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 2px 6px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    padding: 3px;
+    width: 110px;
+    font-size: 12px;
+    background: transparent;
+}
+
+.search-box .search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    margin-left: -2px;
+    font-size: 12px;
+    transition: transform 0.2s;
+}
+
+.search-box .search-btn:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    margin-top: 45px;
+}
+
+.back-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background-color: #505823;
+}
+
+.back-btn:hover {
+    background-color: #D8DB7D;
+    color: #85873C;
+}
+
+@media (max-width: 1200px) {
+    .nav-links {
+        gap: 6px;
+    }
+    
+    .nav-links a {
+        padding: 4px 6px;
+        font-size: 12px;
+    }
+    
+    .donate-nav-btn {
+        padding: 6px 12px !important;
+    }
+    
+    .search-box input {
+        width: 100px;
+    }
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.nav-username {
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links li:first-child {
+    display: none;
+}
+
+.donate-nav-btn {
+    background-color: #D8DB7D !important;
+    color: #505823 !important;
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease !important;
+}
+
+.donate-nav-btn:hover {
+    background-color: #85873C !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.donation-nav-group {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.nav-btn {
+    padding: 8px 16px !important;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease !important;
+}
+
+.create-drive-nav-btn {
+    background-color: #505823 !important;
+    color: #D8DB7D !important;
+}
+
+.create-drive-nav-btn:hover {
+    background-color: #D8DB7D !important;
+    color: #505823 !important;
+    transform: translateY(-2px);
+}
+
+.donate-nav-btn {
+    background-color: #D8DB7D !important;
+    color: #505823 !important;
+}
+
+.donate-nav-btn:hover {
+    background-color: #85873C !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.admin-nav-btn {
+    background-color: #85873C !important;
+    color: white !important;
+}
+
+.admin-nav-btn:hover {
+    background-color: #D8DB7D !important;
+    color: #505823 !important;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 1200px) {
+    .donation-nav-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-btn {
+        padding: 6px 12px !important;
+        font-size: 12px !important;
+    }
+} 
