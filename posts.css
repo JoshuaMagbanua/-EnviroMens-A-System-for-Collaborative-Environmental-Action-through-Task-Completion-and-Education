@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #C2C784;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+    color: #000;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    position: relative;
+}
+
+.posts-container {
+    max-height: calc(100vh - 150px);
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.post-card {
+    background-color: #505823;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 2px solid #D8DB7D;
+}
+
+.post-info h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.post-date {
+    font-size: 14px;
+    color: #D8DB7D;
+}
+
+.post-content {
+    line-height: 1.6;
+}
+
+.reference-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #D8DB7D;
+    text-decoration: none;
+}
+
+.reference-link:hover {
+    text-decoration: underline;
+}
+
+.create-post-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #85873C;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s;
+}
+
+.create-post-btn:hover {
+    background-color: #3d421b;
+}
+
+.post-header-popup {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-header-popup img.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #85873C;
+    margin-bottom: -3px;
+}
+
+.post-header-popup .username {
+    font-size: 18px;
+    font-weight: bold;
+    color: #505823;
+    text-align: center;
+    margin-top: 0;
+    line-height: 1;
+}
+
+.swal2-popup.post-detail-popup {
+    padding: 20px;
+}
+
+.swal2-title {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.post-content-popup {
+    margin-top: 20px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.post-content-popup p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.reaction-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reaction-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: #505823;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reaction-btn.active {
+    background: #85873C;
+}
+
+.reaction-btn:hover {
+    opacity: 0.9;
+} 
