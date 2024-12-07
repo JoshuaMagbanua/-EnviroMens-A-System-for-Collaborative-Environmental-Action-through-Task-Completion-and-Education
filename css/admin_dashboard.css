@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #C2C784;
+}
+
+.top-nav {
+    background-color: #85873C;
+    padding: 15px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 100px;
+    color: #000;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.task-section {
+    background-color: #85873C;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.task-section h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.task-details {
+    background-color: #505823;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.participants-table {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.participants-table h3 {
+    color: #505823;
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #505823;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.no-tasks {
+    text-align: center;
+    padding: 50px;
+    background-color: #85873C;
+    border-radius: 15px;
+    color: white;
+}
+
+.create-task-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #505823;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.create-task-btn:hover {
+    background-color: #3d421b;
+}
+
+.analytics-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.participation-stats {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.participation-chart {
+    margin-top: 20px;
+    height: 150px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.continent-distribution {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.continent-distribution h3 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: #505823;
+}
+
+.continent-distribution canvas {
+    height: 150px !important;
+    width: 150px !important;
+    margin: 0 auto;
+    display: block;
+}
+
+.chart-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+
+.stat-box {
+    background: #85873C;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+}
+
+.stat-number {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 14px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.delete-btn {
+    background-color: #d33;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #bf2e2e;
+}
+
+.view-evidence-btn {
+    background-color: #85873C;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.view-evidence-btn:hover {
+    background-color: #6a6c30;
+}
+
+.no-evidence {
+    color: #666;
+    font-style: italic;
+}
+
+.evidence-popup {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.evidence-popup img {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.evidence-container {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.evidence-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.swal2-popup {
+    width: 80% !important;
+    max-width: 800px;
+}
+
+.swal2-actions {
+    gap: 10px;
+}
+
+.swal2-confirm, .swal2-deny, .swal2-cancel {
+    margin: 0 5px !important;
+}

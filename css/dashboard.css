@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d4d669;
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.menu {
+    width: 250px;
+    background-color: #556b2f;
+    padding: 20px;
+    color: white;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+
+.menu button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #6b8e23;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #808000;
+}
+
+.tasks-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.search-refresh {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.tasks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.task {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-5px);
+}
+
+.task-category {
+    display: inline-block;
+    padding: 4px 8px;
+    background-color: #6b8e23;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+.error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.no-tasks {
+    text-align: center;
+    color: #666;
+    margin-top: 50px;
+}
